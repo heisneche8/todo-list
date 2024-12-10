@@ -1,0 +1,139 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: jaro;
+    background: black;
+    display: grid;
+    place-content: center;
+    color: white;
+}
+.container{
+    padding: 40px;
+}
+input{
+    width: 600px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: transparent;
+    
+}
+.putt-contain button{
+    background: rgb(8, 185, 8);
+    color: white;
+    height: 40px;
+    width: 80px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.putt-contain{
+    background: whitesmoke;
+    margin-top: 20px;
+    width: 650px;
+    height: 60px;
+    display: flex;
+    place-items: center;
+    border-radius: 10px;
+    padding: 8px;
+
+}
+.playout{
+    background: transparent;
+    color: white;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.todo{
+    background-image: linear-gradient(to right, rgb(231, 50, 80),blue,blue,blue,blue,blue);
+    background-clip: text;
+    color: transparent;
+}
+
+
+.allcontain{
+    background: whitesmoke;
+    color: black;
+    height: 80px;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contain{
+    background: whitesmoke;
+    color: black;
+    height: 80px;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn{
+    background: rgb(8, 185, 8);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    height: 40px;
+    width: 60px;
+    font-size: 16px;
+}
+.puts{
+    background: rgb(8, 185, 8);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    height: 40px;
+    width: 70px;
+    font-size: 20px;
+    display: grid;
+    justify-content: center;
+    place-content: center;
+    text-align: center;
+}
+.put{
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    height: 40px;
+    width: 70px;
+    font-size: 20px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    display: none;
+}
+.set{
+    display: grid;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+@media  (min-width: 321px) and (max-width: 762px){
+    body{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    input{
+        width: 200px;
+    }
+
+    .putt-contain{
+        width:100% ;
+    }
+    .playout{
+        width: 100%;
+    }
+}
