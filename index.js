@@ -15,7 +15,8 @@ addme.addEventListener('click',function(e){
     main.className = "allcontain"
     let div = document.createElement("div")
     div.className = "contain"
-    let h2 = document.createElement("h2")
+    let h4 = document.createElement("h4")
+    h4.className = "txt-container"
     let button = document.createElement("button")
     button.className = "btn"
     let label = document.createElement("label")
@@ -28,11 +29,11 @@ addme.addEventListener('click',function(e){
 
     
 
-    h2.textContent = enterme.value
+    h4.textContent = enterme.value
     button.textContent = "delete"
     label.textContent = "read"
     nav.textContent = "unread"
-    main.appendChild(h2)
+    main.appendChild(h4)
     main.appendChild(div)
     div.appendChild(section)
     section.appendChild(nav)
@@ -50,18 +51,18 @@ addme.addEventListener('click',function(e){
     })
 
     label.addEventListener('click',function(){
-        h2.style.textDecoration = 'line-through'
-        h2.style.textDecorationColor = 'red'
-        h2.style.background = 'blue'
+        h4.style.textDecoration = 'line-through'
+        h4.style.textDecorationColor = 'red'
+        h4.style.background = 'blue'
         label.style.display = "none"
         nav.style.display = "block"
 
     })
 
     nav.addEventListener('click',function(){
-        h2.style.textDecoration = 'none'
-        h2.style.textDecorationColor = 'none'
-        h2.style.background = 'none'
+        h4.style.textDecoration = 'none'
+        h4.style.textDecorationColor = 'none'
+        h4.style.background = 'none'
         label.style.display = "block"
         nav.style.display = "none"
     })
